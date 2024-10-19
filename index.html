@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviciosinforcosmos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Serviciosinforcosmos</h1>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+    <div class="container" id="inicio">
+        <h2>Bienvenido a Serviciosinforcosmos</h2>
+        <p>Nos especializamos en ofrecer servicios de calidad, pensados para ti. Explora nuestras ofertas y descubre cómo podemos ayudarte.</p>
+    </div>
+    <div class="container" id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Servicio 1</h3>
+                <p>Descripción del servicio 1, diseñado para satisfacer tus necesidades. Precio: $50</p>
+                <button onclick="payWithPayPal(50, 'Servicio 1')">Comprar</button>
+            </div>
+            <div class="service">
+                <h3>Servicio 2</h3>
+                <p>Descripción del servicio 2, enfocado en soluciones efectivas. Precio: $75</p>
+                <button onclick="payWithPayPal(75, 'Servicio 2')">Comprar</button>
+            </div>
+            <div class="service">
+                <h3>Servicio 3</h3>
+                <p>Descripción del servicio 3, siempre con un enfoque en la satisfacción del cliente. Precio: $100</p>
+                <button onclick="payWithPayPal(100, 'Servicio 3')">Comprar</button>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="contacto">
+        <h2>Contáctanos</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo electrónico" required>
+            <textarea placeholder="Mensaje" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 Serviciosinforcosmos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
